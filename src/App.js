@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <Router>
         <div className="webpage-content">
-      <SideNav />
         <Switch>
           <Route exact path="/" component={withRouter(Search)}>
           </Route>
@@ -18,3 +17,5 @@ function App() {
     </div>
   );
 }
+
+export default App;
