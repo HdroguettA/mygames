@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import './Search.css';
+import './Home.css';
 import GamesUnderline from "./svg/GamesUnderline.svg";
 
 function Home() {
