@@ -1,6 +1,7 @@
 import React, { Component }  from 'react';
 import './Home.css';
 import GamesUnderline from "./svg/GamesUnderline.svg";
+import Search from './Search';
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
         <img src={GamesUnderline} alt="Games text underline" className="game-heading-underline"/>
       </div>
       <div className="search-bar">
+        <Search/>
       </div>
     </div>
   );

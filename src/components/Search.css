@@ -1,0 +1,36 @@
+.search-main-content {
+    vertical-align: middle;
+}
+.search-bar {
+    background-color: #00B7AB;
+    width: 40%;
+    height: 8%;
+    margin: 3.5% auto;
+    border-radius: 13px;
+    border: 7px solid #3DC8A3;
+    text-align: left !important;
+}
+.caret {
+    margin-left: 1%;
+    font-weight: 300;
+    font-size: 50px;
+    color: #FFFFFF;
+    -webkit-animation: 1.5s blink linear infinite;
+    animation: 1.6s blink linear infinite;
+} 
+  @keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+      60% {
+          opacity: 1;
+        }
+  }
+  @-webkit-keyframes blink {
+    from, to {
+        opacity: 0;
+      }
+      60% {
+          opacity: 1;
+        }
+  }
