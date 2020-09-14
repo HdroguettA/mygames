@@ -12,11 +12,11 @@
 }
 .caret {
     margin-left: 1%;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 50px;
     color: #FFFFFF;
-    -webkit-animation: 2s blink step-end infinite;
-    animation: 2s blink step-end infinite;
+    -webkit-animation: 1.5s blink linear infinite;
+    animation: 1.6s blink linear infinite;
 } 
   @keyframes blink {
     from, to {
