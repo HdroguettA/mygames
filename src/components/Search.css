@@ -1,0 +1,11 @@
+.search-main-content {
+    vertical-align: middle;
+}
+.search-bar {
+    background-color: #00B7AB;
+    width: 40%;
+    height: 8%;
+    margin: 3.5% auto;
+    border-radius: 13px;
+    border: 7px solid #3DC8A3;
+}
