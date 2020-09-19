@@ -10,7 +10,7 @@ function App() {
       <Router>
         <div className="webpage-content">
         <Switch>
-          <Route exact path="/Home" component={withRouter(Home)}>
+          <Route exact path="/mygames" component={withRouter(Home)}>
           </Route>
           <Route exact path="/Search" component={withRouter(Search)}>
           </Route>
