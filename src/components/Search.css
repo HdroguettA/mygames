@@ -39,4 +39,7 @@ input {
     border: none;
     outline: none;
     caret-color: transparent;
+    color: white;
+    font-size: 1.7rem;
+    max-width: inherit;
 }

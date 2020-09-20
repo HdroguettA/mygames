@@ -10,19 +10,22 @@ class Search extends Component {
 		};
 	}
 	updateInputValue = (input, event) => {
+    document.getElementById("caret").style.animation = 0;
 		const newState = {};
 		newState[input] = event.target.value;
     this.setState(newState);
     document.getElementById("caret").style.margin = 0;
-    document.getElementById("caret").style.animation = 0;
+      document.getElementById("caret").style.animation = "1.6s blink linear infinite";
+    
   };
+
   render () {
   return (
     <div className="search-main-content">
       <AutosizeInput
-          
 					autoFocus
-					value={this.state.searchValue}
+          value={this.state.searchValue}
+          style={{ fontSize: 36 }}
           onChange={this.updateInputValue.bind(this, 'searchValue')}
           className="search-input"
 				/>
