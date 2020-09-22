@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/mygames/static/css/main.ec735d08.chunk.css",
-    "main.js": "/mygames/static/js/main.f89b7347.chunk.js",
-    "main.js.map": "/mygames/static/js/main.f89b7347.chunk.js.map",
+    "main.css": "/mygames/static/css/main.30bbaa9a.chunk.css",
+    "main.js": "/mygames/static/js/main.68da69b2.chunk.js",
+    "main.js.map": "/mygames/static/js/main.68da69b2.chunk.js.map",
     "runtime-main.js": "/mygames/static/js/runtime-main.a9ad908b.js",
     "runtime-main.js.map": "/mygames/static/js/runtime-main.a9ad908b.js.map",
-    "static/js/2.28944e2e.chunk.js": "/mygames/static/js/2.28944e2e.chunk.js",
-    "static/js/2.28944e2e.chunk.js.map": "/mygames/static/js/2.28944e2e.chunk.js.map",
+    "static/js/2.fe02aaae.chunk.js": "/mygames/static/js/2.fe02aaae.chunk.js",
+    "static/js/2.fe02aaae.chunk.js.map": "/mygames/static/js/2.fe02aaae.chunk.js.map",
     "index.html": "/mygames/index.html",
-    "precache-manifest.92416e3e3d9da3890503e714e0bbc5cb.js": "/mygames/precache-manifest.92416e3e3d9da3890503e714e0bbc5cb.js",
+    "precache-manifest.f7541a0e2d8329db35390482087475c3.js": "/mygames/precache-manifest.f7541a0e2d8329db35390482087475c3.js",
     "service-worker.js": "/mygames/service-worker.js",
-    "static/css/main.ec735d08.chunk.css.map": "/mygames/static/css/main.ec735d08.chunk.css.map",
-    "static/js/2.28944e2e.chunk.js.LICENSE.txt": "/mygames/static/js/2.28944e2e.chunk.js.LICENSE.txt",
+    "static/css/main.30bbaa9a.chunk.css.map": "/mygames/static/css/main.30bbaa9a.chunk.css.map",
+    "static/js/2.fe02aaae.chunk.js.LICENSE.txt": "/mygames/static/js/2.fe02aaae.chunk.js.LICENSE.txt",
     "static/media/GamesUnderline.svg": "/mygames/static/media/GamesUnderline.e4ec9436.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a9ad908b.js",
-    "static/js/2.28944e2e.chunk.js",
-    "static/css/main.ec735d08.chunk.css",
-    "static/js/main.f89b7347.chunk.js"
+    "static/js/2.fe02aaae.chunk.js",
+    "static/css/main.30bbaa9a.chunk.css",
+    "static/js/main.68da69b2.chunk.js"
   ]
 }
