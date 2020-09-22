@@ -90,3 +90,17 @@
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
+.autocomplete div.selected {
+  background-color: #00B7AB;
+  border-radius: 10px;
+}
+.autocomplete div.selected:last-child {
+  background-color: #00B7AB;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.autocomplete div.selected:first-child {
+  background-color: #00B7AB;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}

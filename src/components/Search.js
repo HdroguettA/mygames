@@ -3,7 +3,25 @@ import './Search.css';
 import AutosizeInput from 'react-input-autosize';
 import autocomplete from 'autocompleter';
 
+function setCaretPosition(elemId, caretPos) {
+  var elem = document.getElementById(elemId);
 
+  if(elem != null) {
+      if(elem.createTextRange) {
+          var range = elem.createTextRange();
+          range.move('character', caretPos);
+          range.select();
+      }
+      else {
+          if(elem.selectionStart) {
+              elem.focus();
+              elem.setSelectionRange(caretPos, caretPos);
+          }
+          else
+              elem.focus();
+      }
+  }
+}
 
 class Search extends Component {
   
@@ -14,6 +32,7 @@ class Search extends Component {
     };
     
   }
+
   componentDidMount () {
     let countries = [
       { label: 'Pong', value: 'UK' },
@@ -31,7 +50,9 @@ class Search extends Component {
           update(suggestions);
           console.log(suggestions[0]);
           try {
+            var tempValue = document.getElementById("games").value;
             document.getElementById("games").value = suggestions[0].label;
+            setCaretPosition("games", tempValue.length);
           } catch (e) {
             console.log("No more suggestions")
           }
@@ -45,7 +66,7 @@ class Search extends Component {
   render () {
   return (
     <div className="search-main-content">
-      <input id="games" type="text" spellcheck="false" className="search-input"></input>
+      <input id="games" type="text" spellcheck="false" className="search-input" />
 
     </div>
   );
