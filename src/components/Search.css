@@ -52,8 +52,41 @@
     vertical-align: middle;
     margin: auto 0;
     width: 100%;
+    padding-left: 2%;
 }
 .autocomplete {
-  width: 100%;
   color: white;
+  background-color: #3DC8A3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width:0%;
+  overflow:hidden;
+  -webkit-transition: width 0.5s linear;
+  -moz-transition: width 0.5s linear;
+  -o-transition: width 0.5s linear;
+  transition: width 0.5s linear;
+}
+
+.autocomplete div {
+  padding: 1.5% 3%;
+  font-size: 3.2rem;
+  font-weight: 300;
+  -webkit-transition: width 0.5s linear;
+  -moz-transition: width 0.5s linear;
+  -o-transition: width 0.5s linear;
+  transition: width 0.5s linear;
+}
+.autocomplete div:hover {
+  background-color: #00B7AB;
+  border-radius: 10px;
+}
+.autocomplete div:hover:last-child {
+  background-color: #00B7AB;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.autocomplete div:hover:first-child {
+  background-color: #00B7AB;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
