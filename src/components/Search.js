@@ -1,7 +1,10 @@
 import React, { Component }  from 'react';
 import './Search.css';
+import { Link } from "react-router-dom";
 import AutosizeInput from 'react-input-autosize';
 import autocomplete from 'autocompleter';
+
+const AsteroidsPage = () => <Link style={{ textDecoration: "none" }} to="/"> <span className="Login"> Login</span> </Link>;
 
 function setCaretPosition(elemId, caretPos) {
   var elem = document.getElementById(elemId);
@@ -34,11 +37,9 @@ class Search extends Component {
   }
 
   componentDidMount () {
-    let countries = [
+    let games = [
       { label: 'Pong', value: 'UK' },
       { label: 'Asteroids', value: 'US' },
-      { label: 'Asteroidsasd', value: 'US' },
-      { label: 'Asteroidsaa', value: 'US' }
     ];
     let input = document.getElementById("games");
     autocomplete({
@@ -46,7 +47,7 @@ class Search extends Component {
       fetch: function(text, update) {
           text = text.toLowerCase();
           // you can also use AJAX requests instead of preloaded data
-          var suggestions = countries.filter(n => n.label.toLowerCase().startsWith(text))
+          var suggestions = games.filter(n => n.label.toLowerCase().startsWith(text))
           update(suggestions);
           console.log(suggestions[0]);
           try {
@@ -59,6 +60,10 @@ class Search extends Component {
       },
       onSelect: function(item) {
           input.value = item.label;
+          if (input.value == 'Asteroids') {
+            console.log(input.value)
+            AsteroidsPage();
+          }
       }
   })
   }
