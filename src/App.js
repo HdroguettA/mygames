@@ -12,7 +12,7 @@ function App() {
       <HashRouter history={history}>
         <div className="webpage-content">
         <Switch>
-          <Route exact path="/" component={withRouter(Home)}>
+          <Route exact path="/" component={withRouter(Asteroids)}>
           </Route>
           <Route exact path="/Search" component={withRouter(Search)}>
           </Route>
