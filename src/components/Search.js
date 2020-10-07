@@ -3,8 +3,9 @@ import './Search.css';
 import { Link } from "react-router-dom";
 import AutosizeInput from 'react-input-autosize';
 import autocomplete from 'autocompleter';
+import history from './../history';
 
-const AsteroidsPage = () => <Link style={{ textDecoration: "none" }} to="/"> <span className="Login"> Login</span> </Link>;
+const AsteroidsPage = () => <Link to='/Asteroids'>{console.log("asteroids")}</Link>;
 
 function setCaretPosition(elemId, caretPos) {
   var elem = document.getElementById(elemId);
@@ -61,8 +62,8 @@ class Search extends Component {
       onSelect: function(item) {
           input.value = item.label;
           if (input.value == 'Asteroids') {
-            console.log(input.value)
-            AsteroidsPage();
+            console.log("Hi " + input.value)
+            history.push('/Asteroids#/');
           }
       }
   })
@@ -71,7 +72,7 @@ class Search extends Component {
   render () {
   return (
     <div className="search-main-content">
-      <input id="games" type="text" spellcheck="false" className="search-input" />
+      <input id="games" type="text" spellCheck="false" className="search-input" />
 
     </div>
   );
